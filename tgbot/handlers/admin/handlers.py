@@ -21,6 +21,7 @@ def admin(update: Update, context: CallbackContext) -> None:
 def stats(update: Update, context: CallbackContext) -> None:
     """ Show help info about all secret admins commands """
     u = User.get_user(update, context)
+    print(f'get_message from: {u.username}')
     if not u.is_admin:
         update.message.reply_text(static_text.only_for_admins)
         return
