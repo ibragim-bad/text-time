@@ -24,3 +24,4 @@ jobs:
           app-name: 'dtb'
           git-push-flags: '--force'
           dokku-user: 'root'
+          remote-branch: 'main'
