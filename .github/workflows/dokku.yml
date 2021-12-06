@@ -21,7 +21,7 @@ jobs:
       with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
           dokku-host: 'ibragim.me'
-          app-name: 'dtb'
+          app-name: 'text-time'
           git-push-flags: '--force'
           dokku-user: 'root'
           remote-branch: 'main'
